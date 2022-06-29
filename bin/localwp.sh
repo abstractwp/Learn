@@ -4,9 +4,9 @@
 set -e
 
 # Update wp configs
-wp config set JETPACK_DEV_DEBUG true
-wp config set WPORG_SANDBOXED true
-wp config set FEATURE_2021_GLOBAL_HEADER_FOOTER false
+wp config set JETPACK_DEV_DEBUG true --raw
+wp config set WPORG_SANDBOXED true --raw
+wp config set FEATURE_2021_GLOBAL_HEADER_FOOTER false --raw
 
 # Activate plugins
 wp plugin activate edit-flow jetpack wordpress-importer wporg-learn/wporg-learn.php
