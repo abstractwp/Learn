@@ -6,6 +6,14 @@
 
 .wp-env.override.json
 
+# Ignore LocalWP files #
+/**.php
+/wp-includes/
+/wp-admin/
+.htaccess
+readme.html
+license.txt
+
 # Ignore 3rd-party code.
 /wp-content/*
 /wp-content/mu-plugins/*

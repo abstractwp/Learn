@@ -1,7 +1,8 @@
 # WP - Learn
 
 ## Prerequisites
-- [Docker](https://docs.docker.com/get-docker/)
+
+- [Docker](https://docs.docker.com/get-docker/) (Don't need if using LocalWP)
 - [Node/NPM](https://nodejs.org/en/download/)
 - [Yarn](https://www.npmjs.com/package/yarn)
 - [Composer](https://getcomposer.org/download/)
@@ -9,9 +10,32 @@
 - [NVM](https://github.com/nvm-sh/nvm) or [N](https://github.com/tj/n) (optional)
 
 ## Setup
+
+### Setup on docker
+
 1. `yarn`
 2. `yarn run create`
 3. Visit site at `localhost:8888`
+
+### Setup via LocalWP
+
+1. Install a fresh WordPress install locally by LocalWP.
+2. Setup WP - Learn repository. On LocalWP, click on `Open site shell`.
+```
+rm -rf wp-content #remove default wp-content folder.
+git init
+git remote add origin git@github.com:abstractwp/Learn.git
+git fetch -p
+git checkout trunk
+```
+
+3. Deploy sites
+```
+yarn
+yarn run create:localwp
+```
+
+4. Visit site as your LocalWP domain set.
 
 ⚠️ [`node-sass` is very picky about node versions](https://www.npmjs.com/package/node-sass). If you get errors, [make sure your node version is supported](https://stackoverflow.com/questions/60394291/error-node-modules-node-sass-command-failed) by the version of `node-sass` in `package.json`. e.g., `nvm use lts/fermium`.
 
