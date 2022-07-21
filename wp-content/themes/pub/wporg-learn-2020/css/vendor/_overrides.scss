@@ -388,7 +388,7 @@ p {
 }
 
 .lp-content .lp-details .lp-links {
-	margin: 1.25rem 0;
+	margin: 2rem 0;
 }
 
 .lp-content .lp-details .lp-links li {
@@ -406,11 +406,11 @@ p {
 	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
 	color: #666666;
 	display: inline-block;
-	font-size: 14px;
+	font-size: 13px;
 	width: 100%;
-	max-width: 220px;
-	padding: 5px 10px;
+	padding: 10px;
 	text-decoration: none;
+	text-align: center;
 }
 
 .lp-details .lp-links li a .dashicons {
