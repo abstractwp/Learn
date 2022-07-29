@@ -255,7 +255,6 @@ function wporg_learn_get_lesson_plan_taxonomy_data( $post_id, $context ) {
 		),
 	);
 
-	/*
 	$versions = wporg_learn_get_taxonomy_terms( $post_id, 'wporg_wp_version', $context );
 	if ( $versions ) {
 		$data[] = array(
@@ -265,7 +264,6 @@ function wporg_learn_get_lesson_plan_taxonomy_data( $post_id, $context ) {
 			'value' => $versions,
 		);
 	}
-	*/
 
 	return $data;
 }
